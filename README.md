@@ -1,2 +1,2 @@
 #BOOKcase
-At this site you can... I am not solve what you can)
+This application imitates library. In this application you can borrow some books.

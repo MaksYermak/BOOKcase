@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>BookCase Home</h1>
+
+<p>Welcome to <em>BookCase</em>, a very basic Django website.</p>
+
+<h2>Dynamic content</h2>
+
+<p>The bookcase has the following record counts:</p>
+<ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li><strong>Genre:</strong> {{ num_genre }}</li>
+    <li><strong>Books with "wild" in title:</strong> {{ num_wild_books }}</li>
+</ul>
+
+<p>You have visited this page {{ num_visits }} {% if num_visits == 1 %} time {%else%} times {%endif%}</p>
+{% endblock %}
